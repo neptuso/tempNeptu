@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Meteorológicos</title>
+</head>
+<body>
+    <h1>Datos Meteorológicos</h1>
+    <p>Temperatura: {{ datos.temperatura }}</p>
+    <p>Humedad: {{ datos.humedad }}</p>
+    <h1>Datos Meteorológicos</h1>
+    <ul>
+        {% for etiqueta, valor in datos.items() %}
+            <li>{{ etiqueta }}: {{ valor }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
