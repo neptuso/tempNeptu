@@ -7,7 +7,6 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     url = 'https://chajarialdia.com.ar/estacion/index.html'
-datos = obtener_datos_meteorologicos(url)
     datos = obtener_datos_meteorologicos(url)
     return render_template('index.html', datos=datos)
 
