@@ -10,9 +10,10 @@
     <p>Temperatura: {{ datos.temperatura }}</p>
     <p>Humedad: {{ datos.humedad }}</p>
     <h1>Datos Meteorológicos</h1>
+    <p> FEcha y hora de lectura: {{ datos.fecha_hora }}</p>
     <ul>
         {% for etiqueta, valor in datos.items() %}
-            <li>{{ etiqueta }}: {{ valor }}</li>
+            <li>{{ etiqueta }}: {{ valor }} (Hora: {{ datos.fecha_hora }})</li>
         {% endfor %}
     </ul>
 
