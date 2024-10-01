@@ -25,6 +25,6 @@ def obtener_datos_meteorologicos(url):
     return datos
 
 # Ejemplo de uso
-url = 'https://urlejemplo.com'
+url = 'https://chajarialdia.com.ar/estacion/index.html'
 datos = obtener_datos_meteorologicos(url)
 print(datos)
